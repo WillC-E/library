@@ -20,7 +20,7 @@ class Book {
 	dateBorrowed blank:false, nullable:false
 	returnDate blank:false, nullable:false
 	student blank:false, nullable:false
-	description blank:false, nullable:false, maxSize:5000, widget:'textarea'
-	tuitionFees blank:false, nullable:false,  scale:2
+	overdue blank:false, nullable:false
+
     }
 }
