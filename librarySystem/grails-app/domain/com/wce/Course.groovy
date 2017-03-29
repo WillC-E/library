@@ -8,6 +8,12 @@ class Course {
 	String department
 	String description
 	String studyMode
+ 
+	static hasMany=[students:Student]
+
+String toString(){
+"$title"
+}
 
     static constraints = {
 
@@ -18,5 +24,11 @@ class Course {
 	studyMode blank:false, nullable:false, size:1..20
 	description blank:false, nullable:false, maxSize:5000, widget:'textarea'
 	
-    }
+
+
+  }
 }
+
+
+
+

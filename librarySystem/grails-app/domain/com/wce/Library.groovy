@@ -8,6 +8,11 @@ class Library {
 	String location
 	String studySpaces
 
+static hasMany=[books:Book, librarians:Librarian, students:Student]
+String toString(){
+"$building"
+}
+
     static constraints = {
 
 	building blank:false, nullable:false
