@@ -4,7 +4,7 @@ class Student {
 
 	String name
 	String email
-	String username
+	String userName
 	String password
 	String studentID
 	Course course
@@ -21,7 +21,7 @@ String toString(){
 	name blank:false, nullable:false
 	studentID blank:false, nullable:false
 	email blank:false, nullable:false, email:true
-	username blank:false, nullable:false, unique:true
+	userName blank:false, nullable:false, unique:true
 	password blank:false, nullable:false
 	course blank:false, nullable:false
 

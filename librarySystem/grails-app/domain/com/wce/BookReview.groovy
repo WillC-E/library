@@ -7,6 +7,9 @@ class BookReview {
 	Student student
 	String review
 
+String toString(){
+"$book"
+}
 static belongsTo = Book
 
     static constraints = {
