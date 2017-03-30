@@ -8,6 +8,7 @@ class Student {
 	String password
 	String studentID
 	Course course
+	Library library
 
 static hasMany=[bookReviews:BookReview, books:Book]
 
