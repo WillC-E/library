@@ -16,6 +16,7 @@
 
 	<div class="row">
 		<asset:image src="banner.jpg"/>
+<g:loginToggle/>
 	</div>	
 
     <g:layoutBody/>
