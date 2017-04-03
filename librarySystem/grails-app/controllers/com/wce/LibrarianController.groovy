@@ -22,4 +22,9 @@ class LibrarianController {
 			}
 	}
 	
+	def logout={
+		session.user=null
+		redirect(url:'/')
+	}
+
 }
