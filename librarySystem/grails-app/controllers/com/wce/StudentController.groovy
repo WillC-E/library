@@ -4,6 +4,24 @@ class StudentController {
 
 	def scaffold = Student
 
+	def advSearch(){
+	}
+
+	def advResults(){
+		def studentProps = Student.metaClass.properties*.name
+		def students = Student.withCriteria {
+			"${params.queryType}"{
+				params.each{field,value->
+					if (studentProps.grep(field)&& value){
+						ilike(field, value)
+					}
+			}
+		}
+	}
+[students:students]
+}
+
+
 	def login(){
 	}
 	
@@ -26,4 +44,5 @@ class StudentController {
 		session.user=null
 		redirect(url:'/')
 	}
-}
+} 
+
