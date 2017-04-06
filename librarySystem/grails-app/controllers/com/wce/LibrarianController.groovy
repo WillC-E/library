@@ -4,6 +4,10 @@ class LibrarianController {
 
 	def scaffold = Librarian
 
+	def showLibrarianPage() {
+		render view:'librarianPage'
+	}
+
 	def login(){
 	}
 	

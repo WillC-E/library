@@ -4,8 +4,23 @@ class BootStrap {
 
     def init = { servletContext ->
 
+	/* def AdSet=new Library(
+	building:'Addsetts Library',
+	address:'123 road name',
+	openingHours:'10am',
+	location:'Hallam main',
+	studySpaces:'456',
+	).save()
 
-	/*def comp=new Course(
+	def Col=new Library(
+	building:'Coligate Library',
+	address:'123 road name',
+	openingHours:'10am',
+	location:'Hallam main',
+	studySpaces:'456',
+	).save()
+
+	def comp=new Course(
 	title:'Computing',
 	code:'COMP1',
 	leader:'Bob F.',
@@ -29,7 +44,7 @@ class BootStrap {
 	userName:'w.ce',
 	password:'password',
 	studentID:'b5020855',
-	course:comp
+	course:comp,
 	).save()
  
 	def lS=new Student(
@@ -38,24 +53,9 @@ class BootStrap {
 	userName:'l.lk',
 	password:'password',
 	studentID:'b456123',
-	course:media
+	course:media,
 	).save()
 
-	def AdSet=new Library(
-	building:'Addsetts Library',
-	address:'123 road name',
-	openingHours:'10am',
-	location:'Hallam main',
-	studySpaces:'456',
-	).save()
-
-	def Col=new Library(
-	building:'Coligate Library',
-	address:'123 road name',
-	openingHours:'10am',
-	location:'Hallam main',
-	studySpaces:'456',
-	).save()
 
 	def pDid=new Librarian(
 	name:'bob',
@@ -113,11 +113,12 @@ class BootStrap {
 	created:new Date('15/05/2019'),
 	student:lS,
 	review:'Hallam main'
-	).save()
+	).save() 
 
 	
 
 	AdSet.addToStudents(wCE)
+	
 	Col.addToStudents(lS)*/
 
     }

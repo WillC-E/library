@@ -16,8 +16,10 @@
 
 	<div class="row">
 		<asset:image src="banner.jpg"/>
-<g:loginToggle/>
-<g:studentloginToggle/>
+
+<g:link controller="student" action="showStudentPage"> Student home    </g:link>
+<g:link controller="librarian" action="showLibrarianPage"> Librarian home </g:link>
+
 	</div>	
 
     <g:layoutBody/>

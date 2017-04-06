@@ -4,6 +4,10 @@ class StudentController {
 
 	def scaffold = Student
 
+	def showStudentPage() {
+		render view:'studentPage'
+	}
+
 	def advSearch(){
 	}
 
